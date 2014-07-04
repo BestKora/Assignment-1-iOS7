@@ -35,5 +35,4 @@
     self.flipCount++;
 }
 
-
 @end
