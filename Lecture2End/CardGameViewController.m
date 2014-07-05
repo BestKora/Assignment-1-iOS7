@@ -4,7 +4,7 @@
 //
 
 #import "CardGameViewController.h"
-#import "Deck.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
 
@@ -15,6 +15,15 @@
 @end
 
 @implementation CardGameViewController
+
+- (Deck *)deck
+{
+    if (!_deck) {
+        _deck = [[PlayingCardDeck alloc] init];
+    }
+    return _deck;
+}
+
 
 - (void)setFlipCount:(int)flipCount
 {
