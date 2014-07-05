@@ -4,11 +4,13 @@
 //
 
 #import "CardGameViewController.h"
+#import "Deck.h"
 
 @interface CardGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
+@property (nonatomic, strong) Deck *deck;
 
 @end
 
